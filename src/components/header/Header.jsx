@@ -64,12 +64,14 @@ function Header() {
             <span>Airport taxis</span>
           </div>
         </div>
+
         <h1 className="headerTitle">A lifetime of discounts? It's Genius.</h1>
         <p className="headerDesc">
           Get rewarded for your travels - unlock instant savings of 10% or more
           with a free Booking account
         </p>
         <button className="headerBtn">Sign in / Register</button>
+
         <div className="headerSearch">
           <div className="headerSearchItem">
             <FontAwesomeIcon icon={faBed} className="headerIcon" />
@@ -79,6 +81,7 @@ function Header() {
               className="headerSearchInput"
             />
           </div>
+
           <div className="headerSearchItem">
             <FontAwesomeIcon icon={faCalendarDays} className="headerIcon" />
             <span
@@ -88,6 +91,7 @@ function Header() {
               date[0].endDate,
               "MM/dd/yyyy"
             )}`}</span>
+
             {openDate && (
               <DateRange
                 editableDateInputs={true}
@@ -96,7 +100,6 @@ function Header() {
                 ranges={date}
                 className="date"
               />
-            )}
             )}
           </div>
           <div className="headerSearchItem">
@@ -147,6 +150,7 @@ function Header() {
                     </button>
                   </div>
                 </div>
+
                 <div className="optionItem">
                   <span className="optionText">Room</span>
                   <div className="optionCounter">
