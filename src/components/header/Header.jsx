@@ -57,11 +57,11 @@ function Header({ type }) {
         <div className="headerList">
           <div className="headerListItem active">
             <FontAwesomeIcon icon={faBed} />
-            <span>stay</span>
+            <span>Stays</span>
           </div>
           <div className="headerListItem">
             <FontAwesomeIcon icon={faPlane} />
-            <span>Flight</span>
+            <span>Flights</span>
           </div>
           <div className="headerListItem">
             <FontAwesomeIcon icon={faCar} />
@@ -76,18 +76,16 @@ function Header({ type }) {
             <span>Airport taxis</span>
           </div>
         </div>
-
         {type !== "list" && (
           <>
             <h1 className="headerTitle">
               A lifetime of discounts? It's Genius.
             </h1>
             <p className="headerDesc">
-              Get rewarded for your travels - unlock instant savings of 10% or
-              more with a free Booking account
+              Get rewarded for your travels – unlock instant savings of 10% or
+              more with a free Lamabooking account
             </p>
             <button className="headerBtn">Sign in / Register</button>
-
             <div className="headerSearch">
               <div className="headerSearchItem">
                 <FontAwesomeIcon icon={faBed} className="headerIcon" />
@@ -98,7 +96,6 @@ function Header({ type }) {
                   onChange={(e) => setDestination(e.target.value)}
                 />
               </div>
-
               <div className="headerSearchItem">
                 <FontAwesomeIcon icon={faCalendarDays} className="headerIcon" />
                 <span
@@ -108,7 +105,6 @@ function Header({ type }) {
                   date[0].endDate,
                   "MM/dd/yyyy"
                 )}`}</span>
-
                 {openDate && (
                   <DateRange
                     editableDateInputs={true}
@@ -120,7 +116,6 @@ function Header({ type }) {
                   />
                 )}
               </div>
-
               <div className="headerSearchItem">
                 <FontAwesomeIcon icon={faPerson} className="headerIcon" />
                 <span
@@ -150,7 +145,6 @@ function Header({ type }) {
                         </button>
                       </div>
                     </div>
-
                     <div className="optionItem">
                       <span className="optionText">Children</span>
                       <div className="optionCounter">
@@ -172,7 +166,6 @@ function Header({ type }) {
                         </button>
                       </div>
                     </div>
-
                     <div className="optionItem">
                       <span className="optionText">Room</span>
                       <div className="optionCounter">
@@ -197,7 +190,6 @@ function Header({ type }) {
                   </div>
                 )}
               </div>
-
               <div className="headerSearchItem">
                 <button className="headerBtn" onClick={handleSearch}>
                   Search
